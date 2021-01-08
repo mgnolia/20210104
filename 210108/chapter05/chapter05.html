@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+        }
+
+        /* header part */
+        #main_header {
+            width: 960px;
+            margin: 0 auto;
+            height: 160px;
+            position: relative;
+        }
+
+        #main_header>#title {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+        }
+
+        #main_header>#main_gnb {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+
+        }
+
+        #main_header>#main_lnb {
+            position: absolute;
+            right: 0px;
+            bottom: 10px;
+        }
+
+        #title {
+            font-family: 'East Sea Dokdo', cursive;
+        }
+
+        /* gnb */
+        #main_gnb>ul {
+            overflow: hidden
+        }
+
+        #main_gnb>ul>li {
+            float: left
+        }
+
+        #main_gnb>ul>li>a {
+            display:block;
+            padding: 2px 10px;
+            border:1px solid black;        }
+
+        #main_gnb>ul>li>a:hover
+        {
+            background-color: black;
+            color: white;
+        }    
+
+        /* lnb */
+        #main_lnb>ul {
+            overflow: hidden
+        }
+
+        #main_lnb>ul>li {
+            float: left
+        }
+
+        #main_lnb>ul>li>a {
+            display:block;
+            padding: 2px 10px;
+            border:1px solid black;
+        }
+        #main_lnb>ul>li>a:hover{
+            background-color: black;
+            color: white;
+        }
+        #main_gnb>ul>li:first-child>a{border-radius:10px 0 0 10px;}
+        #main_gnb>ul>li:last-child>a{border-radius:0 10px 10px 0;}
+        #main_lnb>ul>li:first-child>a{border-radius:10px 0 0 10px;}
+        #main_lnb>ul>li:last-child>a{border-radius:0 10px 10px 0;}
+
+        #content
+        {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #content>#main_section
+        {
+            width: 750px;
+            float: left;
+            /* background-color: blueviolet; */
+        }
+        #content>#main_aside
+        {
+            width: 200px;
+            float: right;
+            /* background-color: crimson; */
+        }
+
+
+        /* 본문 */
+        #main_section>article.main_article
+        {
+            margin-bottom: 10px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        input:nth-of-type(1){display:none}
+        input:nth-of-type(1)~div:nth-of-type(1){display:none}
+        input:nth-of-type(1):checked~div:nth-of-type(1){display:block}
+        input:nth-of-type(2){display:none}
+        input:nth-of-type(2)~div:nth-of-type(2){display:none}
+        input:nth-of-type(2):checked~div:nth-of-type(2){display:block}
+
+        section.buttons{overflow:hidden;}
+        section.buttons>label{
+            display: block; float: left;
+            width: 100; height: 30px;
+            line-height: 30px;
+            text-align:center;
+            box-sizing:border;
+            border: 1px solid black;
+            background:black;
+            color:white;
+        }
+        input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1)
+        {
+            background:white;
+            color:black;
+        }
+        input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2)
+        {
+            background:white;
+            color:black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header id="main_header">
+        <div id="title">
+            <h1>Lorem, ipsum.</h1>
+            <h2>夫为中，向胜帝。 </h2>
+        </div>
+        <nav id="main_gnb">
+            <!-- (li>a[href=#])*4 -->
+            <ul>
+                <li><a href="#">one</a></li>
+                <li><a href="#">two</a></li>
+                <li><a href="#">three</a></li>
+                <li><a href="#">foul</a></li>
+            </ul>
+        </nav>
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">five</a></li>
+                <li><a href="#">six</a></li>
+                <li><a href="#">seven</a></li>
+                <li><a href="#">nine</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <section id="main_section">
+        <article class="main_article">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptate rem nesciunt necessitatibus ab quaerat ratione dolorem quos nobis at natus quibusdam laborum aliquam, quo maxime esse assumenda eum quam.</p>
+        </article>
+        <article class="main_article">
+            <h1>.أبجد هوز  حطى</h1>
+            <p>.أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ، الاحتياجات الأكبر لرفض المتعة ، من الصعب جدًا إجراء قطع سلس! عبث أولئك الذين يرفضون محبة المبارك شيء لا تتبعه الأخوات؟</p>
+        </article>
+        <article class="main_article">
+            <h1>แอปเปิล เชฟโปรเจคท์ ฟีด</h1>
+            <p>แอปเปิล เชฟโปรเจคท์ ฟีด คอร์ป อ่วมแพนดาพะเรอเจ็ต ฮาโลวีนทับซ้อนรีเสิร์ช สเตชัน เอ็นทรานซ์คอรัปชั่นแคร็กเกอร์ สี่แยกล็อบบี้ซิมพันธกิจ แคปซูเอี๋ยสตรอว์เบอร์รี นิรันดร์สมิติเวชดาวน์ สป็อต แทงโก้วาริชศาสตร์ ออร์แกนิค เซ็นเตอร์โอเพ่นแฟรนไชส์ราเมน บร็อกโคลีแมคเคอเรลบูติค ตัวเองสต๊อก โค้ชคอนแทคอพาร์ทเมนต์ เหมยแครกเกอร์รีโมต แอพพริคอทออเดอร์หลวงตาคลิป อัตลักษณ์ฟรุตบ๊อบ วิดีโอแอโรบิค วาไรตี้เยอบีราแคมป์สถาปัตย์ บอมบ์ตุ๊กตุ๊กผลไม้พิซซ่าอัลมอนด์ ตุ๊กช็อค สไลด์ดยุค ทัวร์ เคลียร์มือถือลามะ เทวาธิราชแบล็กวีเจ แบรนด์แอ็คชั่น</p>
+        </article>
+        </section>
+        <aside id="main_aside">
+            <input type="radio" name="tab"id="first" checked>
+            <input type="radio" name="tab"id=second>
+            <section class="buttons">
+                <label for="first">first</label>
+                <label for="second">second</label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                </ul>
+            </div>
+            <div class="tab_item">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+    <footer></footer>
+</body>
+
+</html>
